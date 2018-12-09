@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BIS4630 Corporate Compliance &amp; Fraud Analytics</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Hayson Tse, PhD (HK)" />
+    <meta name="date" content="2018-01-31" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# BIS4630 Corporate Compliance &amp; Fraud Analytics
+## Week 13 Cybercrime &amp; Information Security (Supplementary Materials)
+### Hayson Tse, PhD (HK)
+### 31 January 2018
+
+---
+
+
+
+
+# Help
+
+* Pink means `I am a link; please click me.`  
+
+* Click a slide and press `H` for help  
+
+???
+
+This is notes.
+
+---
+# Contact info
+
+* Personal email
+
+    + [H.Tse](H.Tse@mdx.ac.uk)  
+
+    + [hayson.tse](hayson.tse@teacher.hkuspace.hku.hk)  
+
+* Course twitter
+
+    + [@bis4630](https://twitter.com/bis4630)  
+
+---
+
+# Copyright
+
+[This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licence.](http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
+
+&lt;img src="by-nc-sa.png" height="100pt" /&gt;
+
+---
+
+# Table of contents
+
+* Course administration
+
+* Objectives
+
+* Background to breach of information security
+
+* UK data principles (security)
+
+* Council of Europe: data principles (security) and information system security
+
+* FCA Handbook Systems and Controls
+
+* UK Industries and International requirements
+
+* FATA Reports New Payment Methods
+
+* Cases for current and previous lectures
+
+* Summary
+
+---
+
+name: course-admin
+
+class: inverse, center, middle
+
+# Course administration
+
+---
+
+# Classroom Conduct
+
+* [HKU SPACE Handbook](http://bit.ly/2ds6czb)
+
+    + Unauthorised reservation of seats is not permitted.
+
+    + Eating or drinking is not allowed.
+
+    + All mobile phones and pagers are to be turned off.
+
+    + Smoking is prohibited at all HKU SPACE learning centres and the University campus.
+
+    + No video / audio recording is allowed, except with the permission of the Programme Director / Manager, and is subject to any conditions stipulated when such permission is granted.
+
+    + Personal belongings should not be left unattended.
+
+---
+
+# MSc Electronic Security and Digital Forensics Degree
+
+&gt; “This course will focus on IT law, professional and ethical issues, criminal law, theories of crime as well as looking at the legal system more generally. You'll also focus on security regulations, contingency planning and risk management as well as intellectual property law, privacy and data protection law.” - [Course homepage](http://bit.ly/2e18OVE)
+
+---
+
+# Compulsory modules that you are exempted
+
+* BIS 4620 Digital Investigation and Evidence Management (30 Credits)
+
+* BIS 4610 Information Security Management (30 Credits)
+
+---
+
+# Compulsory modules for you
+
+* BIS 4600 Legal and Professional Aspects of Digital Forensics (30 Credits)
+
+* BIS4630 Corporate Compliance and Financial Crime Prevention (30 Credits) 
+
+* BIS 4992 Postgraduate Computing Project (60 Credits)
+
+---
+
+# Study hours outside class contact
+
+&gt; “The study hours for each credit point is 10 hours. For a 30-credit module this equates to 300 hours. Therefore, if a module has time-tabled activities i.e. lecture/seminar/lab, of 3 hours per week for a 24-week period (total of 72 hours), then the out-of-class study commitment expected of students is 228 hours in total.” - Course Handbook.
+
+* Practical meaning: 300 hours = **2.5 hours per day** x *5 days* x 24 learning weeks (Note: only 18 learning weeks for Hong Kong)
+
+---
+
+# Master's degree in UK
+
+&gt; “[A] master's [degree] is hard work and requires a lot of commitment. It has to be something you actively want to do . . . Postgraduate study is *much more independent* than undergraduate study, so, on a practical level, it is important to be aware that you may be *working by yourself for much of the time*.” - [Taking the plunge into the master's world (The Guardian, 2009)](http://bit.ly/2fBScEa)
+
+---
+
+# Teaching Plan IMPORTANT
+
+* The Hong Kong teaching schedule is set out below. It supersedes the UK model explained in the Module Handbook.
+
+* The Hong Kong schedule consists of a 18-week schedule decided by HKUSPACE. The UK course consists of a 24-week schedule.
+
+* The 2 dates for coursework remain the same: 7 March 2018 and 14 March 2018 (both London time)
+
+---
+
+# Week 12 - 13: 24 &amp; 31.i.2018
+
+* Cybercrime
+
+    + The vulnerabilities of electronic crime
+  
+    + Electronic means to commit fraud and financial crime
+  
+    + Malicious damage and disruption
+  
+    + Managing breaches - planned response Policy and strategic measures
+  
+    + Electronic payment systems
+  
+    + Information security techniques
+
+---
+
+# Week 17: 28.ii.2018
+
+* Revision, Practise Presentations
+
+    + 7 March 2018 is the deadline to send Coursework A, B and C to Middlesex via Middlesex Turnitin. There is no lecture on 7 March 2018.
+  
+    + Revision
+  
+    + Practise presentations
+  
+    + Examination preparation and practice
+
+---
+
+# Week 18: 14.iii.2018
+
+* Group Presentations &amp; Examination preparation
+
+    + Summative group presentation
+  
+    + Revision
+  
+    + Examination paper practice
+  
+* Assessment Formative assessment
+
+    + Monitor student learning to improve their learning
+  
+    + Provide ongoing feedback to teachers to improve teaching
+  
+* Summative assessment
+
+    + Evaluate student learning at the end of an instructional unit by comparing it against some standard or benchmark
+
+---
+
+# Important dates
+
+* 11 October 2017 - 6 December 2017, both dates inclusive
+
+    + You are recommended to research for Coursework Section A to C.
+  
+* 24 January 2018
+
+    + You are recommended to complete a first draft copy of Coursework Section A.
+  
+* 31 January 2018
+
+    + You are recommended to complete a second draft of Coursework Section A and continue to review, edit and amend until you have a 'camera-ready' piece of soft copy before 7 March 2018.
+
+---
+
+# Important dates
+
+* 7 February 2018
+
+    + You are recommended to complete a first draft of Coursework Section B.
+  
+* 14 February 2018
+
+    + You are recommended to complete a second draft of Coursework Section B and continue to review, edit and amend until you have a 'camera-ready' piece of soft copy before 7 March 2018.
+  
+* 21 February 2018
+
+    + You are recommended to complete a first draft of Coursework Section C.
+
+---
+
+# Important dates
+
+* 28 February 2018
+
+    + You are recommended to complete a second draft of Coursework Section C and continue to review, edit and amend until you have a 'camera-ready' piece of soft copy before 7 March 2018.
+
+---
+
+# Important dates
+
+* 7 March 2018
+
+    + Deadline for Summative Submission of Coursework Section A, B and C, each with its covering page via the supplied Turnitin link in the Middlesex University UniHub module page to Middlesex.
+  
+    + Any other means of submission, even to me or to HKUSPACE, means no submission.
+
+---
+
+# Important dates
+
+* 14 March 2018
+
+    + Group presentation for Coursework Section C.
+
+---
+
+name: objective
+
+class: inverse, center, middle
+
+# Objectives
+
+---
+
+# Objectives
+
+* You should learn information security requirements of
+
+    + UK Data Protection Bill and Council of Europe GDPA
+    
+    + FCA Handbook
+    
+    + UK Industries
+    
+    + International organisations
+    
+    + FATA reports
+
+---
+
+name: info-sec
+
+class: inverse, center, middle
+
+# Information Security
+
+---
+
+# Motive
+
+* The Threat Within, a Study on Insider Threat by DSCI in collaboration with PwC
+
+* 2011 [here](https://pwc.to/2niEQzw)
+
+&gt; “an insider can be motivated to commit a crime due to a number of reasons, viz. information gain, personal financial gain, a new job, unsatisfactory appraisal or unmet professional expectations, an urge to prove oneself, feeling of entitlement, dissatisfaction with supervisor, etc.”
+
+---
+
+# Recommendations to Industry
+
+* Comprehensive insurance from data theft
+
+* Knowledge sharing
+
+* Database of security and data breaches.
+
+&gt; “This way the industry will be able to create repository of types of breaches, profile of the executors, methods deployed for execution, etc.”
+
+* Increase awareness and culture towards National Skill Register.
+
+&gt; “Industry should leverage the National Skills Registry when recruiting new employees. NSR is a quick and credible reference to profile of professionals. It is a security best practice for the industry and assures identity security, industry acceptance to honest professionals.”
+
+---
+
+# Disgruntled employee
+
+* Wiki-leaks given data on Swiss bank accounts
+
+&gt; “Rudolf Elmer . . . worked as chief operating officer for the Cayman branch of Swiss bank Julius Baer. He systematically passed customer data to the media, and later also to WikiLeaks. The activities were deliberately orchestrated whistle blowing campaign that breached Swiss banking secrecy laws. Two discs containing data covering the period 1990-2009 and relating to the offshore accounts of multinationals, financial firms, wealthy individuals and politicians from many countries including the US, Germany and the UK, were handed to WikiLeaks in January 2011. Elmer had been dismissed from the bank in 2002 'following behaviour that was detrimental and unacceptable for the Bank'”.
+
+---
+
+# Snowden
+
+* Wright &amp; Kreissl (ed), Surveillance in Europe, Routledge, 2015, page 22
+
+&gt; “Former US Vice-President Dick Cheney has called Edward Snowden a 'traitor' for leaking NSA documents. While Cheney and other US government officials have said Snowden should be captured and punished, others regard Snowden as a hero. Snowden has been likened to Daniel Ellsberg, the main who in 1971 leaked the Pentagon Papers to the New York Times, which revealed that the US government had been less than truthful with the public about the conduct of the Vietnam War. The Pentagon Papers came as a shock to the public, and to law-makers. Ellsberg, like Snowden, was initially accused of espionage and conspiracy, though those charges were ultimately dropped. Today, he is mostly seen as a hero of open government and free speech.”
+
+---
+
+
+# Verizon 
+
+* [2016 Data Breach Investigation Report](http://vz.to/1Svr72f)
+
+* Statistics
+
+* Motive of attacker
+
+    + Financial
+
+    + Espionage
+
+    + Fun
+
+    + Ideology
+
+    + Grudge
+
+    + Everything else
+
+---
+
+# Verizon 2016
+
+* Classifications of incidents by combinations of who (actors), what (assets), how (actions) and why (motive)
+
+    + Miscellaneous Errors
+
+    + Privilege Misuse
+
+    + Physical Theft / Loss
+
+    + Denial of Service
+
+    + Everything Else
+
+    + Web App Attacks
+
+    + Point of Sale Intrusions
+
+    + Cyber-espionage
+
+    + Payment Card Skimmers
+ 
+    + Crimeware
+
+---
+
+# Verizon 
+
+* [2017 Data Breach Investigation Report](http://bit.ly/2BBPK8y)
+
+* statistics
+
+---
+
+# Examples of statistics
+
+&lt;img src="verizon-1.png" height="500pt" /&gt;
+
+---
+
+# Examples of statistics
+
+&lt;img src="verizon-2.png" height="500pt" /&gt;
+
+---
+
+name: uk-data
+
+class: inverse, center, middle
+
+# United Kingdom Data Principles
+
+---
+
+# Data Protection Principles
+
+* [Data Protection Act 1998](http://bit.ly/18Er0gh)
+
+* [Schedule 1 to Data Protection Act lists 7 data protection principles](http://bit.ly/1o05R2L)
+
+* [Information Commissioner's Office, Guide to Data Protection](http://bit.ly/2jFsDEN) (25 October 2016)
+
+* 7th Data Protection Principle
+
+&gt; “Appropriate technical and organisational measures shall be taken against unauthorised or unlawful processing of personal data and against accidental loss or destruction of, or damage to, personal data.”
+
+---
+
+# Data Protection Principles
+
+* [ICO Guide to Data Protection](http://bit.ly/1zMuAww)
+
+&gt; “In practice, it means you must have appropriate security to prevent the personal data you hold being accidentally or deliberately compromised. In particular, you will need to:”
+
+&gt; “design and organise your security to fit the nature of the personal data you hold and the harm that may result from a security breach;”
+
+&gt; “be clear about who in your organisation is responsible for ensuring information security;”
+
+&gt; “make sure you have the right physical and technical security, backed up by robust policies and procedures and reliable, well-trained staff; and”
+
+&gt; “be ready to respond to any breach of security swiftly and effectively.”
+
+---
+
+# GDPR (EU) &amp; Data Protection Bill
+
+* General Data Protection Regulation 2018 (GDPR)
+
+    + direct applicable to UK
+
+    + [Regulation (EU) 2016/679](http://bit.ly/1XR52Pq)
+
+* Briexit
+
+    + [Data Protection Bill 2017](http://bit.ly/2EinVo0)
+
+    + Data Protection Bill 2017 [Explanatory Note](http://bit.ly/2DKTnOI)
+
+---
+
+# GDPR
+
+* Directive (EU) 2016/680 of the European Parliament and of the Council on 27 April 2016 on the protection of natural persons with regard to the processing of personal data by competent authorities for the purposes of the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, and on the free movement of such data, and repealing Council Framework Decision 2008/977/JHA
+
+---
+
+
+# GDPR
+
+* Laura Scaife. General Data Protection Regulation: The principles and grounds for processing. Compliance &amp; Risk Journal (2017) 6(5), pp. 6 - 9
+
+&gt; “The General Data Protection Regulation 2018 (the 'GDPR') will be directly enforceable in the United Kingdom, Ireland, and other EU Member States from 25 May 2018 . . . will supersede the provisions of the Data Protection Act 1998. . .”
+
+&gt; “The UK's Data Protection Bill was published and put before Parliament on Thursday 14 September 2017 ahead of the UK's exit from the EU. In the light of the proposed exit, the new Bill seeks to implement the GDPR in full and to Brexit-proof it, . . . ”
+
+---
+
+# Data covered by the GDPR
+
+&gt; 'Personal data' means any information relating to an identified or identifiable natural person (the 'data subject'). The GDPR's recitals highlight that certain categories of online data may be personal - online identifiers, device identifiers, cookie IDs and IP addresses are referenced.
+
+&gt; 'Special categories of personal data' are defined as personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and the category is also relevant for the processing of genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person's sex life or sexual orientation.
+
+&gt; 'Pseudonymisation' is a new definition brought in by the legislation, which refers to the technique of processing personal data in such a way that they can no longer be attributed to a specific data subject without use of additional information which must be kept separately and be subject to technical and organisational measures to ensure non-attribution.
+
+---
+
+# General processing principles
+
+* Article 5(1) of GDPR
+
+    + processed lawfully, fairly and in a transparent manner ('lawfulness and transparency');
+
+    + collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes ('purpose limitation');
+
+    + adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed ('data minimisation');
+
+    + accurate and, where necessary, kept up to date ('accuracy');
+
+    + stored for no longer than is necessary ('storage limitation');
+
+    + kept secure and protected from unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures ('integrity and confidentiality').
+
+---
+
+# Data Protection Bill 2017 Overview
+
+* Explanatory Note
+
+&gt; “It sets new standards for protecting personal data, in accordance with recent EU data protection laws, giving people
+more control over use of their data. The Bill also helps prepare the UK for a future outside the EU.”
+
+&gt; “The four main matters provided for in the Bill are general data processing, law enforcement data processing, data processing for national security purposes including processing by the intelligence services and regulatory oversight and enforcement.”
+
+&gt; “The current law on data protection is found in the Data Protection Act 1998, which regulates the processing of personal data.”
+
+&gt; “The Data Protection Bill (“the Bill”) will replace the 1998 Act to provide a comprehensive legal framework for data protection in the UK, supplemented by the GDPR until the UK leaves the EU.”
+
+---
+
+# Comparisn of accountability principle
+
+&lt;img src="gdpr-1.png" height="500pt" /&gt;
+---
+
+# Comparisn of accountability principle
+
+&lt;img src="gdpr-2.png" height="500pt" /&gt;
+---
+
+# Comparisn of accountability principle
+
+&lt;img src="gdpr-3.png" height="500pt" /&gt;
+---
+
+# Data Protection Bill 2017 Overview
+
+&gt; The GDPR changes some of the definitions that set the scope of data protection law. Like the 1998 Act, the GDPR applies to “personal data”. The GDPR’s definition is more detailed and makes it clear that information such as an online identifier, for example a computer’s IP address, can be personal data.
+
+&gt; 'Personal data' means any information relating to an identified or identifiable natural person (the 'data subject'). The GDPR's recitals highlight that certain categories of online data may be personal - online identifiers, device identifiers, cookie IDs and IP addresses are referenced.
+
+---
+
+# Obligations relating to security
+
+* Data Protection Bill: Sections 66 and 107
+
+&gt; (1) Each controller and each processor must implement appropriate technical and organisational measures to ensure a level of security appropriate to the risks arising from the processing of personal data.
+
+---
+
+# Obligations relating to security
+
+* Data Protection Bill: Sections 66 and 107
+
+&gt; (2) In the case of automated processing, each controller and each processor must, following an evaluation of the risks, implement measures designed to—
+
+&gt; (a) prevent unauthorised processing or unauthorised interference with the systems used in connection with it,
+
+&gt; (b) ensure that it is possible to establish the precise details of any 10 processing that takes place,
+
+&gt; (c) ensure that any systems used in connection with the processing function properly and may, in the case of interruption, be restored, and
+
+&gt; (d) ensure that stored personal data cannot be corrupted if a system used in connection with the processing malfunctions.
+
+---
+
+# GDPR
+
+&gt; “Personal data shall be: . . . processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures (‘integrity and confidentiality’).” (Article 5(1)(f))
+
+---
+
+# GDPR
+
+&gt; “In assessing the appropriate level of security account shall be taken in particular of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to personal data transmitted, stored or otherwise processed.” (Article 32(2))
+
+
+---
+
+# GDPR
+
+&gt; “. . . Personal data should be processed in a manner that ensures appropriate security and confidentiality of the personal data, including for preventing unauthorised access to or use of personal data and the equipment used for the processing.” (Preamble, paragraph 30)
+
+---
+
+# GDPR
+
+&gt; “The processing of personal data to the extent strictly necessary and proportionate for the purposes of ensuring network and information security, i.e. the ability of a network or an information system to resist, at a given level of confidence, accidental events or unlawful or malicious actions that compromise the availability, authenticity, integrity and confidentiality of stored or transmitted personal data, and the security of the related services offered by, or accessible via, those networks and systems, by public authorities, by computer emergency response teams (CERTs), computer security incident response teams (CSIRTs), by providers of electronic communications networks and services and by providers of security technologies and services, constitutes a legitimate interest of the data controller concerned. This could, for example, include preventing unauthorised access to electronic communications networks and malicious code distribution and stopping ‘denial of service’ attacks and damage to computer and electronic communication systems.” (Preamble, paragraph 49)
+
+---
+
+# Internet protocol addresses
+
+&gt; “Natural persons may be associated with online identifiers provided by their devices, applications, tools and protocols, such as internet protocol addresses, cookie identifiers or other identifiers such as radio frequency identification tags. This may leave traces which, in particular when combined with unique identifiers and other information received by the servers, may be used to create profiles of the natural persons and identify them.” (Preamble, paragraph 30)
+
+---
+
+# Data Protection Officer
+
+* GDPR requires the designation of a DPO in three specific cases (Article 37(1)):
+
+    + where the processing is carried out by a public authority  or  body (irrespective of what data is being processed);
+
+    + where the core activities of the controller or the processor consist of processing operations, which require regular and systematic monitoring of data subjects on a large scale; and
+
+    + where the core activities of the controller or the processor consist of processing on a large scale of special categories of data or personal data relating to criminal convictions and offences.
+
+
+---
+
+# Data Protection Officer
+
+* [Guidelines on Data Protection Officers](http://bit.ly/2DLiBst) (adopted on 13 December 2016, last revised and adopted don 5 April 2017)
+
+---
+
+# Data Protection Officer
+
+* an external DPO (Article 37(6)):
+
+&gt; “According to Article 37(6), the DPO may be a staff member of the controller or the processor (internal DPO) or 'fulfil the tasks on the basis of a service contract'. This means that the DPO can be external, and in this case, his/her function can be exercised based on a service contract concluded with an individual or an organisati”
+
+---
+
+# Data Protection Officer
+
+* qualifications (Article 37(5)):
+
+&gt; “The GDPR requires that the DPO 'shall be designated on the basis of professional qualities and, in particular, expert knowledge of  data protection law and practices and the ability to fulfil the tasks referred to in Article 39”.
+
+---
+
+# Data Protection Officer
+
+* Necessary skills and experience include:
+
+    + expertise in national and European data protection laws and  practices including an in-depth understanding of the GDPR
+
+    + understanding of the processing operations carried out
+
+    + understanding of information technologies and data security
+
+    + knowledge of the business sector and the organisation
+
+    + ability to promote a data protection culture within the organisation
+
+---
+
+# Data Protection Officer
+
+*  Duties to monitor compliance (Article 39(1)(b))
+
+    + collect information to identify processing activities;
+
+    + analyse and check the compliance of processing activities;
+
+    + inform, advise and issue recommendations to the controller or the processor
+
+---
+
+# Data Protection Officer
+
+* Article 38(2) of the GDPR requires the organisation to support its DPO:
+
+    + Active support of the DPO’s function by senior management
+
+    + Sufficient time to for DPOs to fulfil their duties
+
+    + Adequate support in terms of financial resources, infrastructure (premises, facilities, equipment) and staff where appropriate
+
+    + Official communication of the designation of the DPO to all staff
+
+    + Access to other services within the organisation so that DPOs can receive essential support, input or information from those other services
+
+    + Continuous training
+
+---
+
+# Penalty
+
+* Article 83 GDPR requires supervisory authorities to impose administrative fines on data controllers and processors who act in breach of the Bill.
+
+* Article 83 of the GDPR sets the maximum penalty that can be issued as 20 million EUR, or in the case of an undertaking, up to 4 % of the total worldwide annual turnover of the preceding financial year, whichever is higher.
+
+---
+
+name: eu-data
+
+class: inverse, center, middle
+
+# Council of Europe (Data Principles)
+
+---
+
+# European Treaty
+
+* [Convention for the Protection of Individuals with regard to Automatic Processing of Personal Data 1980](http://bit.ly/295qEFw)
+
+* Entered into force on 1 October 1985
+
+* Article 7
+
+&gt; “Appropriate security measures shall be taken for the protection of personal data stored in automated data files against accidental or unauthorised destruction or accidental loss as well as against unauthorised access, alteration or dissemination.”
+
+---
+
+# Directive (1995)
+
+* [Directive of 95/46/EC](http://bit.ly/2k9knxs) of the European Parliament and of the Council of 24 October 1995 on the protection of individuals with regard to the processing of personal data and on the free movement of such data
+
+* Article 17
+
+&gt; “Member States shall provide that the controller must implement appropriate technical and organizational measures to protect personal data against accidental or unlawful destruction or accidental loss, alteration, unauthorized disclosure or access, in particular where the processing involves the transmission of data over a network, and against all other unlawful forms of processing.”
+
+---
+
+# Directive (2016)
+
+* This is Directive not Regulation
+
+* [Directive (EU) 2016/680](http://bit.ly/25h0fax) of the European Parliament and of the Council on 27 April 2016 on the protection of natural persons with regard to the processing of personal data by competent authorities for the purposes of the prevention, investigation, detection or prosecution of criminal offences or the execution of criminal penalties, and on the free movement of such data, and repealing Council Framework Decision 2008/977/JHA
+
+---
+
+# Directive (2016)
+
+* Article 4(f)
+
+&gt; “Member States shall provide for personal data to be:”
+
+&gt; “processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures.”
+
+---
+
+# Regulation (2016)
+
+* This is Regulation not Directive
+
+* Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016
+
+* General Data Protection Regulation 2016
+
+* See section of GDPR and Data Protection Bill
+
+---
+
+name: eu-info-sys
+
+class: inverse, center, middle
+
+# Council of Europe (Info Sys)
+
+---
+
+# Directives
+
+* [Directive 2013/40/EU](http://bit.ly/2k9yYss) of the European Parliament and of the Council of 12 August 2013 on attacks against information systems and replacing Council Framework Decision 2005/222/JHA
+
+* Came into force on 24 August 2013
+
+* re-enacted four main substantive offences with amendments:
+
+    + illegal access to information systems;
+
+    + illegal system interference
+
+    + illegal data interference
+
+    + illegal interception
+
+---
+
+# Impact on UK
+
+* Serious Crime Act 2015
+
+    + introduced a small number of changes through the Serious Crime Act 2015 (sections 41 to 43), which came into force on 5 May 2015, amending provisions of the Computer Misuse Act 1990.
+
+---
+
+# Impact on UK
+
+* New procurement offence
+
+&gt; “Section 3A offences already covered the intentional production, sale, import, distribution or otherwise making available of certain tools. Section 3A now makes the procurement of such tools an offence. Previously, section 3A required the prosecution to show that the individual obtained the tool with a view to its being supplied for use to commit, or assist in the commission of an offence: now the obtaining of such a tool is an offence both where the person has an intention to supply the tool, and where the person intends to use the tool to commit (or assist in the commission of) a Substantive Offence.”
+
+---
+
+# Impact on UK
+
+* New offence of causing or creating risk of serious damage
+
+* Section 41 of the Serious Crime Act 2015 also created a new offence of undertaking unauthorised acts (knowing them to be unauthorised) intentionally or recklessly causing, or creating risk of serious damage of a material kind. Accordingly, the maximum penalty for this new offence is life imprisonment for cases involving threat to life, loss of life or damage to national security, and in respect of damage to the economy or environment, 14 years' imprisonment.
+
+---
+
+# Impact on UK
+
+* Extra-territorial jurisdiction
+
+* Section 43 of the Serious Crime Act 2015 amended sections 4 and 5 to give extended extra-territorial effect to the offences:
+
+&gt; “it would be possible to prosecute a French national resident in England and Wales who hacked into a computer system in France; or a UK national who hacked into a computer system in the UK whilst temporarily resident in France (and who returns to the UK).”
+
+---
+
+# Impact on UK
+
+* [Computer Misuse Act 1990](http://bit.ly/1gVidU2) (as amended by CA 2015)
+
+    + section 1: unauthorised access to computer material
+
+    + section 2: unauthorised access with intent to commit or facilitate commission of further offences
+
+    + section 3: unauthorised acts with intent to impair, or with recklessness as to impairing, operating of computer etc.
+
+    + section 3ZA: unauthorised acts causing, or creating risk of, serious damage
+
+    + section 3A: Making, supplying or obtaining articles for use in offence under section 1, 3 or 3ZA
+
+---
+
+# Impact on UK
+
+* [Computer Misuse Act 1990](http://bit.ly/1gVidU2) (as amended by CA 2015)
+
+    + Section 4: Territorial scope of offences under this Act
+
+    + Section 5: Significant links with domestic jurisdiction
+
+    + Section 6: Territorial scope of inchoate offences related to offences under this Act.
+
+    + Section 7: Territorial scope of inchoate offences related to offences under external law corresponding to offences under sections 1 to 3.
+
+---
+
+name: fca-book
+
+class: inverse, center, middle
+
+# FCA Handbook
+
+---
+
+# SYSC 3 Systems and controls
+
+* R = Rules; G = Guidance
+
+* SYSC 3.2 Areas covered by systems and control
+
+* SYSC 3.2.6. R
+
+&gt; “A firm must take reasonable care to establish and maintain effective systems and controls for compliance with applicable requirements and standards under the regulatory system and for countering the risk that the firm might be used to further financial crime.”
+
+---
+
+# SYSC 4 General organisational requirements
+
+* SYSC 4.1 General requirements
+
+* SYSC 4.1.1. R
+
+&gt; “(1) A firm must have robust governance arrangements, which include a clear organisational structure with well defined, transparent and consistent lines of responsibility, effective processes to identify, manage, monitor and report the risks it is or might be exposed to, and internal control mechanisms, including sound administrative and accounting procedures and effective control and safeguard arrangements for information processing systems”
+
+---
+
+# SYSC 6 Compliance, internal audit and financial crime
+
+* SYSC 6.1 Compliance
+
+* SYSC 6.1.1. R
+
+&gt; “A firm must establish, implement and maintain adequate policies and procedures sufficient to ensure compliance of the firm including its managers, employees and appointed representatives (or where applicable, tied agents) with its obligations under the regulatory system and for countering the risk that the firm might be used to further financial crime.”
+
+* SYSC 6.1.1A
+
+&gt; “The FCA provides guidance on steps that a firm can take to reduce the risk that it might be used to further financial crime in FC (Financial crime: a guide for firms).”
+
+---
+
+# SYSC 7.1 Risk Control
+
+* SYSC 7.1.1 G
+
+&gt; “SYSC 4.1.1 R requires a firm to have effective processes to identify, manage, monitor and report the risks it is or might be exposed to.”
+
+* SYSC 7.1.2 R
+
+&gt; “A common platform firm (means including a bank) must establish, implement and maintain adequate risk management policies and procedures, including effective procedures for risk assessment, which identify the risks relating to the firm's activities, processes and systems, and where appropriate, set the level of risk tolerated by the firm.”
+
+---
+
+# Red flags for misuse of Internet payment services
+
+&gt; “The customer opens his individual Internet account with the payment service provider in one country but logs in regularly on the website from a single one of multiple possible third countries.”
+
+&gt; “The account opened by the customer is loaded with funds transferred from a third country, which could indicate that the customer does not live in the country from which he registered but in another country where he cannot register (not accepted by the website for security reasons) or that he registered in one country but commits illegal activities in a third country, or that he concealed the results of his illegal activities in a third country.”
+
+---
+
+# Red flags for misuse of Internet payment services
+
+
+&gt; “The customer starts to purchase items on the Internet for amounts not in line with previous transactions profile.”
+
+&gt; “The customer loads his Internet account with cash, if the Internet payment services provider allows loading with cash (systems which do not accept cash are assessed as lower risk).”
+
+&gt; “The customer's account with a payment service provider is loaded with funds transferred by a third party apparently not related to the customer.”
+
+&gt; “The transactions of the customer suddenly deviate from its previous transactions profile after his customer account has been loaded with money from a third party.”
+
+---
+
+# Red flags for misuse of Internet payment services
+
+&gt; “The customer purchases items of high value or purchases middle high value items on a regular basis with a pre-paid debit card, an anonymous pre-paid credit card or a number of gift cards where the origin of the funds is difficult to retrace.”
+
+
+&gt; “The customer apparently resells goods purchased beforehand, without any economic reasons, or with a significant discount or increase on the price.”
+
+&gt; “The buyer requests that the goods be delivered to a post office box or to a different address from the one registered to the account.”
+
+---
+
+# Red flags for misuse of Internet payment services
+
+
+&gt; “A customer uses an account with an Internet payment service provider not to purchase items on the Internet but to hide a sum of money obtained illegally. A customer opens an account with an Internet payment service provider, loads the account with large amounts of money, leaves the funds on the account during a certain period of time and then requests the redemption of the funds at a later date.”
+
+&gt; “A customer requesting the balance from his Internet account to be transferred to a third party without any apparent connection to him.”
+
+---
+
+# Red flags for misuse of Internet payment services
+
+&gt; “Pre-paid credit cards are used which are issued in a foreign country.”
+
+&gt; “A customer sells illegal items or the goods appear on a list of stolen or forbidden items.”
+
+&gt; “Abnormality with the proposed price on an auction site or during an auction sale indicating a possible complicity between buyer and seller e.g. a customer offers to purchase an item at a price significantly higher than the requested price. Additional factors could include multiple transactions between the same buyers and sellers.”
+
+---
+
+# Red flags for misuse of Internet payment services
+
+&gt; “The purchased goods are regularly shipped to a foreign country.”
+
+&gt; “The funds originate from a country under sanctions or a country known to have serious deficiencies in its AML/CTF strategy.”
+
+&gt; “An unexpected turnover is detected for a recently established commercial website or an unexpected increase in the value of the commercial website after a few sales.”
+
+---
+
+name: industries
+
+class: inverse, center, middle
+
+# UK Industries
+
+---
+
+# CiSP
+
+* [Cyber-security Information Sharing Partnership](http://bit.ly/2jFzFbV) (CiSP)
+
+&gt; “CiSP is a joint industry and government initiative set up to exchange cyber threat information in real time, in a secure, confidential and dynamic environment, increasing situational awareness and reducing the impact on UK business.”
+
+---
+
+# CiSP
+
+&gt; “CiSP members receive enriched cyber threat and vulnerability information from the 'Fusion Cell'. This is a joint industry and government analytical team who examine, analyse and feedback cyber information from a wide variety of data sources - ultimately adding value to CiSP members and helping those organisations of all levels of cyber maturity.”
+
+&gt; “Since the launch of CiSP in March 2013, the value of this collaboration has been recognised by industry, with CiSP continuing to grow considerably. As of May 2016, over 2225 organisations and 6150 individuals have signed up to this free service.”
+
+---
+
+# PCI SCC
+
+* The PCI (Payment Card Industry) Security Standards Council
+
+* a global forum for the ongoing development, enhancement, storage, dissemination and implementation of security standards for account data protection.
+
+&gt; “The PCI Security Standards Council offers robust and comprehensive standards and supporting materials to enhance payment card data security. These materials include a framework of specifications, tools, measurements and support resources to help organizations ensure the safe handling of cardholder information at every step. The keystone is the PCI Data Security Standard (PCI DSS), which provides an actionable framework for developing a robust payment card data security process - including prevention, detection and appropriate reaction to security incidents.”
+
+---
+
+# PCI SCC
+
+* [PCI Data Security Standard](http://bit.ly/2k6OnWo) (PCI DSS)
+
+* PCI DSS v3.2 - Apr 2016
+
+&gt; “The Payment Card Industry Data Security Standard (PCI DSS) was developed to encourage and enhance cardholder data security and facilitate the broad adoption of consistent data security measures globally. PCI DSS provides a baseline of technical and operational requirements designed to protect account data. PCI DSS applies to all entities involved in payment card processing - including merchants, processors, acquirers, issuers, and service providers. PCI DSS also applies to all other entities that store, process or transmit cardholder data (CHD) and/or sensitive authentication data (SAD).”
+
+---
+
+name: intl
+
+class: inverse, center, middle
+
+# International
+
+---
+
+# International Monetary Fund
+
+* [here](http://bit.ly/1LA9Tci)
+
+&gt; “The International Monetary Fund (IMF) is an organization of 189 countries, working to foster global monetary cooperation, secure financial stability, facilitate international trade, promote high employment and sustainable economic growth, and reduce poverty around the world. Created in 1945, the IMF is governed by and accountable to the 189 countries that make up its near-global membership.”
+
+&gt; “The IMF's primary purpose is to ensure the stability of the international monetary system, the system of exchange rates and international payments that enables countries (and their citizens) to transact with each other. The Fund's mandate was updated in 2012 to include all macroeconomic and financial sector issues that bear on global stability.”
+
+---
+
+# International Monetary Fund
+
+* IMF magazine
+
+    + [Challenges of the E-Banking Revolution](http://bit.ly/2jFCVUC) (2002 September)
+
+    + [The Dark Side of Technology](http://bit.ly/2jeXeFt) (2016 September)
+
+---
+
+# World Bank
+
+* [Introduction](http://bit.ly/1NUp0lU)
+
+&gt; “Since inception in 1944, the World Bank has expanded from a single institution to a closely associated group of five development institutions. Our mission evolved from the International Bank for Reconstruction and Development (IBRD) as facilitator of post-war reconstruction and development to the present-day mandate of worldwide poverty alleviation”
+
+---
+
+# Working Paper 146
+
+* Integrity in Mobile Phone Financial Services: Measures for Mitigating Risks from Money Laundering and Terrorist Financing, [Working Paper No. 146](http://bit.ly/1vwUvsg) (2008)
+
+* The World Bank identifies 4 basic mobile payment systems
+
+    + mobile financial information services (m-fINFO)
+
+    + mobile bank and securities account services (m-BSA)
+
+    + mobile payment services (m-Payments)
+
+    + mobile money services (m-Money)
+
+---
+
+# Mobile financial information services (m-fINFO)
+
+* Definition
+
+&gt; “m-fINFO gives users the ability to view personal account data and general financial information without conducting transactions. m-fINFO is the most prevalent m-FS. It allows customers to view their account balance statements, transaction history records, exchange rates, stock quotes, receipts and confirmations for credit / debit card transactions, and credit limit alerts”
+
+* Risk
+
+&gt; “The use of mobile phones to access m-fINFO poses low risks from a ML and TF perspective because there are no transfer, deposit, withdrawal, or other options available. Providers and regulators, however, may need to address risks related to other issues like consumer protection, bank secrecy, and IT security.”
+
+---
+
+# Mobile bank and securities account services (m-BSA)
+
+* Definition
+
+&gt; “m-BSA allows bank and securities account holders to conduct transactions. The mobile phone is used to perform financial transactions similar to those conducted through other electronic banking channels such as ATMs, phone or Internet / online banking.”
+
+* Risk
+
+&gt; “The primary ML and TF risks related to m-BSA are anonymity, elusiveness, and rapidity. m-BSA is the result of collaboration among various parties (banks, TelCos, and others), so transactions may be handled by different providers applying uneven levels of regulatory supervision. The services, however, are anchored in a bank or securities account under provisions that govern financial transactions and include supervisory controls.”
+
+---
+
+# Mobile payment services (m-Payments)
+
+* Definition
+
+&gt; “m-Payments allow non-bank and securities account holders to make payments with mobile phones. Although transactions may eventually be processed by a bank in bulk, the fact that m-Payment services do not require an account with a traditional financial institution makes them distinct from m-BSA. The services are often carried out through a non-bank entity (such as a credit card company) and are not based on a pre-existing bank / securities account.”
+
+* Risk
+
+&gt; “m-Payment services face the same risks and call for the same mitigation responses as m-BSA. The type of providers may vary, though, because their services are not grounded in a bank or securities account. Also, the services may be provided by non-traditional financial institutions with differing levels of control and supervision.”
+
+---
+
+# Mobile money services (m-Money)
+
+* Definition
+
+&gt; “m-Money allows users to store value on their mobile phone or mobile phone account in the form of electronic currency that can be used for multiple purposes including transfers to other users and conversion to and from cash. One such example is the use of phone credits and airtime as tender that users can trade for other goods and services.”
+
+* Risk
+
+&gt; “m-Money services create developmental opportunities, but also pose significant ML and TF risks. m-Money is the farthest-removed m-FS model from traditional financial services. It provides an entirely new way to conduct financial transactions and is the most rapidly developing m-FS category, so it carries the greatest potential for development as well as abuse. It poses all potential risks previously discussed plus new risks identified in the team's fieldwork.”
+
+---
+
+# FATF Recommendations for Risk-Based Consideration
+
+* Licensing and registration processes
+
+* Customer identification
+
+* Record keeping
+
+* Internal controls and monitoring
+
+* Guidelines
+
+* Reporting obligations
+
+* Supervision and oversight
+
+* Cross-border transactions
+
+* Staff training
+
+---
+
+# FATF Recommendations for Risk-Based Consideration
+
+
+&lt;img src="FATF4worldbank.png" height="450pt" /&gt;
+
+---
+
+# Working Paper 174
+
+* New Technologies, New Risks? Innovation and Countering the Financing of Terrorism, [Working Paper No. 174](http://bit.ly/2jeoPqn) (2010)
+
+    + value card systems
+
+    + mobile phone financial services (m-FS)
+
+    + online banking and payment services
+
+    + digital currency
+
+&gt; “povides an to date description of how these new technologies work and what challenges jurisdictions face in dealing with the various new payment methods. Secondly, the paper intends to evaluate the risks of these products, separating the fact from the fear of terrorist financing. It is hoped that by identifying the real risks, if any, governments can promote these services as a way to facilitate economic development in a safe and sound marketplace.”
+
+
+
+---
+
+# Digital Currency
+
+&gt; “Distinct from other online banking and Internet payment systems, there exist non-government based currencies that are becoming more known online. Digital currency, also known as digital precious metal because its value is linked to a valuable commodity such as gold or even mobile phone airtime minutes, is exchanged between account holders of the service. Given that the currency is based on the value of a commodity, its price fluctuates independently. Perhaps the most well known of such services is e-gold Ltd., which has nearly 4.5 million open accounts based in gold, silver, platinum, and palladium and at its height of success, had over US$5 million in fund transfers a day.”
+
+---
+
+# Digital Currency
+
+&gt; “Digital currencies usually require two intermediaries when cashing in or cashing out to a national currency. Users acquire the currency through a dealer who maintains an account of digital currency on behalf of the user. The dealer acquires this currency through an exchange that takes national currency for digital currency and vice versa. For example, a user in any part of the world could send Swiss francs to a dealer in another country who, for a fee, communicates with the exchange. The exchange then converts the francs into commodity ownership based on the spot rate. The same occurs for cashing out. The dealer transacts through the exchange to convert the commodity into a national currency for the account holder. The exchange makes the conversion based on the spot rate.”
+
+---
+
+# Digital Currency
+
+&gt; “After the digital currency is acquired, most systems give users the ability to transfer it without the use of intermediaries. This means that settlement is instantaneous. Some even allow the user to immediately physically retrieve the precious metal upon which the digital currency is based. The simultaneous settlement makes digital currency transactions inherently riskier to criminal abuse than other methods of transferring value. Without account monitoring and transaction records (neither of which are required for this channel to function), criminal financial activities can occur anonymously, across borders and literally without a trace. It poses a risk beyond that of cash transactions because the customers are not burdened by the physical movement of funds as it occurs electronically.”
+
+---
+
+
+# US Department of Commerce
+
+* [National Institute of Standards and Technology](http://bit.ly/2iQDVBC)
+
+* [Framework for Improving Critical Infrastructure Cybersecurity](http://bit.ly/2jSGfcQ) (Version 1.0) 12 February 2014
+
+---
+
+# Framework for ICIC
+
+
+&gt; “The Framework is a risk-based approach to managing cybersecurity risk, and is composed of three parts: the Framework Core, the Framework Implementation Tiers, and the Framework Profiles.”
+
+* the Framework Implementation Tiers
+
+* the Framework Profiles
+
+---
+
+# Framework Core
+
+
+&gt; “The Framework Core is a set of cybersecurity activities, desired outcomes, and applicable references that are common across critical infrastructure sectors. The Core presents industry standards, guidelines, and practices in a manner that allows for communication of cybersecurity activities and outcomes across the organization from the executive level to the implementation/operations level.”
+
+* The Framework Core consists of five concurrent and continuous Functions:
+
+    + Identify
+
+    + Protect
+
+    + Detect
+
+    + Respond
+
+    + Recover
+
+---
+
+# Framework Implementation Tiers
+
+&gt; “Framework Implementation Tiers ("Tiers") provide context on how an organization views cybersecurity risk and the processes in place to manage that risk. Tiers describe the degree to which an organization's cybersecurity risk management practices exhibit the characteristics defined in the Framework (e.g., risk and threat aware, repeatable, and adaptive). The Tiers characterize an organization's practices over a range, from Partial (Tier 1) to Adaptive (Tier 4).”
+
+---
+
+# Framework Profile
+
+&gt; “ Framework Profile ("Profile") represents the outcomes based on business needs that an organization has selected from the Framework Categories and Subcategories. The Profile can be characterized as the alignment of standards, guidelines, and practices to the Framework Core in a particular implementation scenario. Profiles can be used to identify opportunities for improving cybersecurity posture by comparing a "Current" Profile (the "as is" state) with a "Target" Profile (the "to be" state).”
+
+---
+
+# Framework Core
+
+
+&lt;img src="frameworkcorestructure.png" height="500pt" /&gt;
+
+---
+
+# Functions
+
+&gt; “Functions organize basic cybersecurity activities at their highest level. These Functions are Identify, Protect, Detect, Respond, and Recover. They aid an organization in expressing its management of cybersecurity risk by organizing information, enabling risk management decisions, addressing threats, and improving by learning from previous activities. The Functions also align with existing methodologies for incident management and help show the impact of investments in cybersecurity.”
+
+---
+
+# Categories
+
+&gt; “Categories are the subdivisions of a Function into groups of cyber security outcomes closely tied to programmatic needs and particular activities. Examples of Categories include "Asset Management," "Access Control," and "Detection Processes."”
+
+---
+
+# Subcategories
+
+*
+&gt; “Subcategories further divide a Category into specific outcomes of technical and/or management activities. They provide a set of results that, while not exhaustive, help support achievement of the outcomes in each Category. Examples of Subcategories include "External information systems are catalogued," "Data - at - rest is protected," and "Notifications from detection systems are investigated."”
+
+---
+
+# Informative References
+
+&gt; “Informative References are specific sections of standards, guidelines, and practices common among critical infrastructure sectors that illustrate a method to achieve the outcomes associated with each Subcategory.”
+
+---
+
+# Five Functions
+
+&gt; “Identify: Develop the organizational understanding to manage cybersecurity risk to systems, assets, data, and capabilities.”
+
+&gt; “Protect: Develop and implement the appropriate safeguards to ensure delivery of critical infrastructure services.”
+
+&gt; “Detect: Develop and implement the appropriate activities to identify the occurrence of a cybersecurity event.”
+
+&gt; “Respond: Develop and implement the appropriate activities to take action regarding a detected cyber security event.”
+
+&gt; “Recover: Develop and implement the appropriate activities to maintain plans for resilience and to restore any capabilities or services that were impaired due to a cyber security event.”
+
+---
+
+name: npm-fata
+
+class: inverse, center, middle
+
+# FATF Report re New Payment Methods
+
+---
+
+# FATF 2001 X Special Recommendations
+
+* October 2001 [here](http://bit.ly/2hAlgup)
+
+* Special Recommendation II
+
+&gt; “The term funds refers to assets of every kind, whether tangible or intangible, movable or immovable, however acquired, and legal documents or instruments in any form, including electronic or digital, ...”
+
+---
+
+# Recommendation VII
+
+* Wire transfers
+
+&gt; “Countries should take measures to require financial institutions, including money remitters, to include accurate and meaningful originator information (name, address and account number) on funds transfers and related messages that are sent, and the information should remain with the transfer or related message through the payment chain.”
+
+&gt; “Countries should take measures to ensure that financial institutions, including money remitters, conduct enhanced scrutiny of and monitor for suspicious activity funds transfers which do not contain complete originator information (name, address and account number).”
+
+---
+
+# FATF Report 2003 40 Recommendations
+
+* October 2003 [here](http://bit.ly/2jUkTuK)
+
+&gt; “Financial institution means any person or entity who conducts as a business one or more of the following activities or operations for or on behalf of a customer: ...5. ...(e.g. ...electronic money).”
+
+---
+
+# Recommendation 5
+
+* Customer due diligence and record-keeping
+
+&gt; “Financial institutions should not keep anonymous accounts or accounts in obviously fictitious names. Financial institutions should undertake customer due diligence measures, including identifying and verifying the identity of their customers, when:”
+
+&gt; “establishing business relations;”
+
+&gt; “carrying out occasional transactions: (i) above the applicable designated threshold; or (ii) that are wire transfers in the circumstances covered by the Interpretative Note to Special Recommendation VII”
+
+&gt; “there is a suspicion of money laundering or terrorist financing; or”
+
+&gt; “the financial institution has doubts about the veracity or adequacy of previously obtained customer identification data.”
+
+---
+
+# CDD measures to be taken
+
+&gt; “Identifying the customer and verifying that customer's identity using reliable, independent source documents, data or information”
+
+&gt; “Identifying the beneficial owner, and taking reasonable measures to verify the identity of the beneficial owner such that the financial institution is satisfied that it knows who the beneficial owner is. For legal persons and arrangements this should include financial institutions taking reasonable measures to understand the ownership and control structure of the customer.”
+
+---
+
+# CDD measures to be taken
+
+&gt; “Obtaining information on the purpose and intended nature of the business relationship.”
+
+&gt; “Conducting ongoing due diligence on the business relationship and scrutiny of transactions undertaken throughout the course of that relationship to ensure that the transactions being conducted are consistent with the institution's knowledge of the customer, their business and risk profile, including, where necessary, the source of funds.”
+
+---
+
+# FATF 2006 Report on New Payment Method
+
+* 13 October 2006, [here](http://bit.ly/2rUroa6)
+
+&gt; “Payment innovations that use the Internet, wireless devices, and even well-established payment networks are appearing globally.”
+
+* Definition of "a money or value transfer system:"
+
+&gt; “financial service that accepts cash, cheques, other monetary instruments or other stores of value in one location and pays a corresponding sum in cash or other form to a beneficiary in another location by means of a communication, message, transfer or through a clearing network to which the money/value transfer system belongs”
+
+* This report considered the following New Payment Methods (NPMs):
+
+&gt; “prepaid cards, electronic purses, mobile payments, Internet payment services, and digital precious metals”
+
+---
+
+# Prepaid cards
+
+&gt; “Prepaid payment cards provide access to monetary funds that are paid in advance by the cardholder. While there are many different types of prepaid cards that are used in a variety of ways, they typically operate in the same way as a debit card and ultimately rely on access to an account. There may be an account for each card that is issued or, alternatively, there may be a pooled account that holds the funds prepaid for all cards issued.”
+
+---
+
+# Prepaid cards
+
+* Open loop
+
+    + multi-purpose cards, usually with MasterCard, American Express, Discover or Visa logo, used like cash wherever credit cards are accepted
+
+* Closed loop
+
+    + single-purpose cards is limited to a specific vendor or location, such as Starbucks cards, mass transit cards and prepaid telephone cards
+
+---
+
+# Prepaid cards
+
+&gt; “In 2004, German tax investigators discovered a case of ML through prepaid cards. Two participants of a criminal fraud/embezzlement scheme had transferred parts of their shares of the criminal proceeds onto several prepaid cards. They used the funds on the cards for cash withdrawals (domestic only, not in foreign countries) and payments for goods. The card accounts were kept only for short periods (6 to 24 months) after which they were closed again and new ones were opened. In this case more than 350.000 EURO were hidden and laundered this way.”
+
+---
+
+# Prepaid cards
+
+&gt; “In 2005, U.S. Immigration and Custom Enforcement initiated an investigation into an employee of a state agency in Ohio selling fraudulent drivers' licenses and identification cards in exchange for prepaid telephone cards.”
+
+---
+
+# Electronic purse
+
+&gt; “An electronic purse, or e-purse (also referred to as a "stored value card" as the value is stored on the card), is value stored electronically in a device such as a card with an integrated circuit chip (called a smart card or chip card). Unlike a card with a magnetic stripe, which stores account information, an e-purse actually stores funds on the card's memory chip. The user is literally carrying his funds with him on the card (hence the name electronic purse).”
+
+---
+
+# Mobile payments
+
+&gt; “Mobile payments refer generally to the use of mobile phones and other wireless communications devices to pay for goods and services. Payments are initiated from a mobile communications device ...that allow the device to access the Internet. ...Most mobile payment services simply use the phone as an access device to initiate and authenticate transactions from existing bank accounts or payment cards. ...Where mobile payment services are not based on an underlying bank or payment card account, the telecom operator typically acts as a payment intermediary to authorize, clear, and settle the payment.”
+
+---
+
+# Internet payment services
+
+&gt; “The expression "Internet payment services" is generally used to address: (i) payment services that rely on a bank account and use the Internet as a means of moving funds to or from a bank account; and (ii) payment services provided by non-bank institutions operating exclusively on the Internet and that are only indirectly associated with a bank account.”
+
+---
+
+# Digital precious metals
+
+&gt; “Digital precious metals are a relatively new online Money / Value Transfer (MVT) system that involves the exchange of options or the right to purchase an amount of precious metals at a specific price. These derivatives can be exchanged, like traditional commodity or securities derivatives, between account holders in a digital precious metal service. Consumers purchase a quantity of virtual precious metal holdings based on the current price of the metal on the world commodity exchanges. Once a purchaser has acquired a quantity of the virtual precious metal, those holdings or a portion of them can be transferred either to another individual or a merchant in exchange for goods and services.”
+
+---
+
+# Digital precious metals
+
+
+&gt; “In March 2004, an Oklahoma man admitted to a financial fraud scheme involving an online investment fund. Thousands of people lost almost $9 million. According to the U.S. Federal Bureau of Investigation, the online investment scheme, E-Biz Ventures, laundered investor money through e-gold Ltd. The Oklahoma man who created this criminal enterprise may have been targeting tax evaders and other criminals because he "allegedly highlighted his reliance on e-gold to appeal to his victims' fear of the federal government and their desire for anonymity."”
+
+---
+
+# Payment Method Risk Factors
+
+
+&lt;img src="paymentmethodrisk.png" height="500pt" /&gt;
+
+---
+
+# NPM ML TF Risks
+
+
+&lt;img src="NMPrisks1.png" height="500pt" /&gt;
+
+---
+
+# NPM ML TF Risks
+
+
+&lt;img src="NMPrisks2.png" height="500pt" /&gt;
+
+---
+
+# Money Laundering Using New Payment Methods
+
+* FATF Report October 2010 [here](http://bit.ly/1ewq4rq)
+
+---
+
+# Payment Methods Risk Factors
+
+
+&lt;img src="firstpart.png" height="250pt" /&gt;
+
+---
+
+# Payment Methods Risk Factors
+
+
+&lt;img src="secondpart.png" height="500pt" /&gt;
+
+---
+
+# Payment Methods Risk Factors
+
+
+&lt;img src="thirdpart.png" height="500pt" /&gt;
+
+---
+
+# Paragraph 112 Value Limits
+
+
+&gt; “Account balance and transaction limits as well as restrictions in the frequency of transactions may prevent criminals from having continuous access to large amounts of money for illicit purposes. Applying a risk-based approach, value limits can be tailored to reflect the needs and risks attached to each market segment and NPM product. For example, there may be effectively no transaction limits when the service is linked to a fully identified and verified bank or credit card account, but a reduced transaction limit or service where there is a reduced ID requirement.”
+
+---
+
+# Typologies of ML
+
+* 33 case studies supporting the three typologies (starting page 36)
+
+    + Third party funding (including strawmen and nominees)
+
+    + Exploitation of the non-face-to-face nature of many NPM accounts
+
+    + Complicit NPM providers or their employees
+
+* Red flags
+
+&gt; “Discrepancies between the information submitted by the customer and information detected by monitoring systems (case 19).”
+
+&gt; “Individuals who hold an unusual volume of NPM accounts with the same provider (cases 21 and 23).”
+
+&gt; “A large and diverse source of funds (i.e., bank transfers, credit card and cash funding from different locations) used to fund the same NPM account(s) (cases 6, 7, 16 and 17).”
+
+---
+
+# Typologies of ML
+
+* Red flags
+
+&gt; “Multiple reference bank accounts from banks located in various cities used to fund the same NPM account (case 27).”
+
+&gt; “Loading or funding of account always done by third parties (cases 1 and 3).”
+
+&gt; “Numerous cash loading, just under the reporting threshold of USD 10 000 (i.e., structured loading of prepaid cards), of the same prepaid card(s), conducted by the same individual(s) on a number of occasions (case 5)”
+
+---
+
+# Typologies of ML
+
+* Red flags
+
+&gt; “Multiple third party funding activities of a NPM account, followed by the immediate transfer of funds to unrelated bank account(s) (cases 9 and 26).”
+
+&gt; “Multiple loading or funding of the same accounts, followed by ATM withdrawals shortly afterwards, over a short period of time (cases 18 and 19).”
+
+&gt; “Multiple withdrawals conducted at different ATMs (sometimes located in various countries different from jurisdiction where NPM account was funded) (cases 4 and 24).”
+
+---
+
+# Typologies of ML
+
+* Red flags
+
+&gt; “Prepaid card company located in one country but holding accounts in other countries (unexplained business rationale which could be suspicious) (case 28).”
+
+&gt; “A typical use of the payment product (including unexpected and frequent cross-border access or transactions) (cases 2 and 24).”
+
+&gt; “Back and forth movement of funds between bank accounts held by different prepaid cards companies located in different countries (may be indicative of layering activity as it does not fit the business model) (case 30).”
+
+&gt; “The volume and frequency of cash transactions (sometimes structured below reporting threshold) conducted by the owner of a prepaid card company do not make economic sense (case 30).”
+
+---
+
+# Typologies of ML
+
+* Red flags
+
+&gt; “Large number of bank accounts held by the same prepaid card company (sometimes in different countries) apparently used as flow-through accounts (may be indicative of layering activity) (case 28).”
+
+---
+
+# The FATF Report 2012 Recommendations
+
+* International Standards on Combating Money Laundering &amp; the Financing of Terrorism &amp; Proliferation: The FATF Recommendations
+
+* The FATF revised the 40 and the IX Recommendations. The revision of the FATF Recommendation was adopted and published in February 2012
+
+* February 2012 [here](http://bit.ly/1e7w0Gl)
+
+---
+
+# FATF Report 2013 Guidance for a risk-based approach
+
+* Prepaid Cards, Mobile Payments &amp; Internet-based Payment Services
+
+    + June 2013 [here](http://bit.ly/2jEAiAl)
+
+    + NPPS: New payment products and services
+
+    + NPM: New payment methods
+
+* Risk mitigation measures
+
+    + Customer due diligence (Recommendation 10)
+
+    + Loading, value and geographical limits
+
+    + Source of funding
+
+    + Record keeping, transaction monitoring and reporting (Recommendation 11)
+
+---
+
+# FATF Report 2015
+
+* Emerging Terrorist Financing Risks
+
+* October 2015 [here](http://bit.ly/1jNNMcs)
+
+* Virtual currencies
+
+&gt; “have attracted the attention of various criminal groups, and may pose a risk for TF. This technology allows for anonymous transfer of funds internationally. While the original purchase of the currency may be visible (e.g., through the banking system), all following transfers of the virtual currency are difficult to detect. The US Secret Service has observed that criminals are looking for and finding virtual currencies that offer: anonymity for both users and transactions; the ability to move illicit proceeds from one country to another quickly; low volatility, which results in lower exchange risk; widespread adoption in the criminal underground; and reliability.”
+
+---
+
+# FATF Report 2015
+
+* Case study 23: promotion of virtual currency to fund terrorism
+
+&gt; “On 28 August 2015 Ali Shukri Amin was sentenced to 11 years in prison to be followed by a lifetime of supervised release and monitoring of his internet activities for conspiring to provide material support and resources to the ISIL”
+
+&gt; “On 28 August 2015 Ali Shukri Amin was sentenced to 11 years in prison to be followed by a lifetime of supervised release and monitoring of his internet activities for conspiring to provide material support and resources to the ISIL.”
+
+---
+
+# FATF Report 2015
+
+* Case study 23: promotion of virtual currency to fund terrorism
+
+&gt; “Amin pleaded guilty on 11 June 2015. He admitted to using Twitter to provide advice and encouragement to ISIL and its supporters. Amin, who used the Twitter handle Amreekiwitness, provided instructions on how to use bitcoin, a virtual currency, to mask the provision of funds to ISIL, as well as facilitation to ISIL supporters seeking to travel to Syria to fight with ISIL. Additionally, Amin admitted that he facilitated travel for a Virginia teenager, who travelled to Syria to join ISIL in January 2015. This teenager, was charged on 10 June 2015, in the Eastern District of Virginia with conspiring to provide material support to terrorists, conspiring to provide material support to ISIL and conspiring to kill and injure people abroad.”
+
+---
+
+# FATF Report 2015
+
+* Case study 23: promotion of virtual currency to fund terrorism
+
+&gt; “Amin's Twitter account boasted over 4000 followers and was used as a pro-ISIL platform during the course of over 7000 tweets. Specifically, Amin used this account to conduct twitter-based conversations on ways to develop financial support for ISIL using on-line currency, such as bitcoin, and ways to establish a secure donation system or fund for ISIL.”
+
+---
+
+# FATF Report 2015
+
+* Case study 23: promotion of virtual currency to fund terrorism
+
+
+&gt; “For example, Amin tweeted a link to an article he had written entitled
+
+&gt; “Bitcoin wa Sadaqat al-Jihad" (Bitcoin and the Charity of Jihad). The article discussed how to use bitcoins and how jihadists could utilise this currency to fund their efforts. The article explained what bitcoins were, how the bitcoin system worked and suggested using Dark Wallet, a new bitcoin wallet, which keeps the user of bitcoins anonymous. The article included statements on how to set up an anonymous donations system to send money, using bitcoin, to the mujahedeen.”
+
+---
+
+# The FATF Recommendations
+
+* International Standards on Combating Money Laundering &amp; the Financing of Terrorism &amp; Proliferation
+
+* October 2016 [here](http://bit.ly/1e7w0Gl)
+
+---
+
+# Recommendation 1: Assessing risks and applying a risk-based approach (RBA)
+
+
+&gt; “Countries should identify, assess, and understand the money laundering and terrorist financing risks for the country, and should take action, including designating an authority or mechanism to coordinate actions to assess risks, and apply resources, aimed at ensuring the risks are mitigated effectively. Based on that assessment, countries should apply a risk-based approach (RBA) to ensure that measures to prevent or mitigate money laundering and terrorist financing are commensurate with the risks identified.”
+
+
+&gt; “Countries should require financial institutions and designated non-financial businesses and professions (DNFBPs) to identify, assess and take effective action to mitigate their money laundering and terrorist financing risks.”
+
+---
+
+# Recommendation 10: Customer due diligence
+
+* The CDD measures to be taken are as follows:
+
+&gt; “Understanding and, as appropriate, obtaining information on the purpose and intended nature of the business relationship.”
+
+&gt; “Conducting ongoing due diligence on the business relationship and scrutiny of transactions undertaken throughout the course of that relationship to ensure that the transactions being conducted are consistent with the institution's knowledge of the customer, their business and risk profile, including, where necessary, the source of funds.”
+
+---
+
+# Recommendation 10: Customer due diligence
+
+&gt; “Financial institutions should be prohibited from keeping anonymous accounts or accounts in obviously fictitious names. Financial institutions should be required to undertake customer due diligence (CDD) measures when:”
+
+&gt; “establishing business relations;”
+
+&gt; “carrying out occasional transactions: (i) above the applicable designated threshold (USD/EUR 15,000); or (ii) that are wire transfers in the circumstances covered by the Interpretive Note to Recommendation 16;”
+
+&gt; “there is a suspicion of money laundering or terrorist financing; or”
+
+&gt; “the financial institution has doubts about the veracity or adequacy of previously obtained customer identification data.”
+
+---
+
+# Recommendation 10: Customer due diligence
+
+* The CDD measures to be taken are as follows:
+
+&gt; “Identifying the customer and verifying that customer's identity using reliable, independent source documents, data or information”
+
+&gt; “Identifying the beneficial owner, and taking reasonable measures to verify the identity of the beneficial owner, such that the financial institution is satisfied that it knows who the beneficial owner is. For legal persons and arrangements this should include financial institutions understanding the ownership and control structure of the customer.”
+
+---
+
+# Recommendation 11: Record-keeping
+
+&gt; “Financial institutions should be required to maintain, for at least five years, all necessary records on transactions, both domestic and international, to enable them to comply swiftly with information requests from the competent authorities. Such records must be sufficient to permit reconstruction of individual transactions (including the amounts and types of currency involved, if any) so as to provide, if necessary, evidence for prosecution of criminal activity.”
+
+---
+
+# Recommendation 11: Record-keeping
+
+
+&gt; “Financial institutions should be required to keep all records obtained through CDD measures (e.g. copies or records of official identification documents like passports, identity cards, driving licences or similar documents), account files and business correspondence, including the results of any analysis undertaken (e.g. inquiries to establish the background and purpose of complex, unusual large transactions), for at least five years after the business relationship is ended, or after the date of the occasional transaction”
+
+---
+
+# Recommendation 11: Record-keeping
+
+&gt; “Financial institutions should be required by law to maintain records on transactions and information obtained through the CDD measures. The CDD information and the transaction records should be available to domestic competent authorities upon appropriate authority.”
+
+---
+
+# Recommendation 15: New technologies
+
+&gt; “Countries and financial institutions should identify and assess the money laundering or terrorist financing risks that may arise in relation to (a) the development of new products and new business practices, including new delivery mechanisms, and (b) the use of new or developing technologies for both new and pre-existing products. In the case of financial institutions, such a risk assessment should take place prior to the launch of the new products, business practices or the use of new or developing technologies. They should take appropriate measures to manage and mitigate those risks.”
+
+---
+
+# Recommendation 16: Wire transfers
+
+&gt; “Countries should ensure that financial institutions include required and accurate originator information, and required beneficiary information, on wire transfers and related messages, and that the information remains with the wire transfer or related message throughout the payment chain.”
+
+&gt; “Countries should ensure that financial institutions monitor wire transfers for the purpose of detecting those which lack required originator and/or beneficiary information, and take appropriate measures.”
+
+
+---
+
+name: cases-current
+
+class: inverse, center, middle
+
+# Cases (Current lecture)
+
+---
+
+# Hacking and sabotage
+
+* *Nasdaq OMX Group*
+
+&gt; “On Sunday, 6 February 2011 the public company that owns the Nasdaq Stock Market confirmed reports that its servers had been breached. A statement released by Nasdaq OMX Group advised that:”
+
+&gt; “Through our normal security monitoring systems we detected suspicious files on the U.S. servers unrelated to our trading systems and determined that our Web facing application Directors Desk was potentially affected. We immediately conducted an investigation which included outside forensic firms and U.S. federal law enforcement. The files were immediately removed and at this point there is no evidence that any Directors Desk customer information was accessed or acquired by hackers.”
+
+---
+
+# Hacking and sabotage
+
+* *Nasdaq OMX Group*
+
+
+&gt; “The Department of Justice, as part of its ongoing investigation, had requested that Nasdaq OMX not notify its customers about the breach until 14 February. Nonetheless, on Saturday 5 February, the company, after consulting with the government, issued its statement in response to a story in The Wall Street Journal that detailed the hack. The story stated that the attack, involving malware, was first discovered in late 2010 and that investigators had yet to identify the malware's origin or purpose.”
+
+---
+
+# Hacking and sabotage
+
+* *Nasdaq OMX Group*
+
+&gt; “Directors Desk is an online portal used by 10,000 senior executives and director for sharing information and is backed by secure email, documentation management, web conferencing and collaboration tools. There was speculation that that rather than seeking to disrupt the markets, the hackers may have been seeking to obtain insider information.”
+
+---
+
+name: cases-previous
+
+class: inverse, center, middle
+
+# Cases (Previous lectures)
+
+---
+
+
+# Money laundering
+
+* *Philip Glennon and the Inland Revenue*
+
+&gt; “In 2003 Philip Glennon was sentenced to six and a half years for tax evasion and received a confiscation order for 3 million. He had admitted 25 counts of defrauding the Inland Revenue (now HMRC), money laundering and false accounting over ten years. During his trial, the court heard that Glennon also laundered money to hide the extent of his wealth and, during a police search in September 1997, almost 1 million had been found buried in three shallow holes in the family garden. The judge was told that, at a conservative estimate, his receivable income was more than 3 million, but that he had only declared around 34,500, resulting in an evasion of 1.1 million.”
+
+---
+
+# Governance
+
+* *Lexi Holdings v Luqman*
+
+* [here](http://bit.ly/2iyfg4n)
+
+&gt; “In the case of Lexi Holdings (in administration) v Luqman [2009] EWCA Civ 117 the Court of Appeal upheld the decision that a director who fails to prevent and detect a fraud on the company by one of his fellow directors may be personally liable to account to the company if his inactivity causes the loss. This Court of Appeal case makes it clear that directors' duties extend to being pro-active where there are grounds to be suspicious of the activities of a fellow director. The facts were that ....”
+
+---
+
+# Governance
+
+* *Lexi Holdings v Luqman*
+
+&gt; “The facts were that a director of the company misappropriated 60m of company funds. The administrator of the then insolvent company sought to recover money from that director and his two sisters, who were also directors of the company. The two sisters knew their brother had been convicted of dishonest offences in the past and they ought to have known that his business dealings required convincing explanation, without which they ought to have notified the company auditors and other directors.”
+
+* The requirement for directors to take responsibility for preventing fraud against the company has now become a standard corporate governance requirement.
+
+---
+
+# Governance
+
+* FCA Handbook
+
+&gt; “FCA Handbook requires (in SYSC 3.2.6) that: A firm must take reasonable care to establish and maintain effective systems and controls for compliance with applicable requirements under the regulatory system and for countering the risk that it might be used to further financial crime.”
+
+---
+
+# Governance
+
+* *BNP Paribas*
+
+* [Notice of Payment](http://bit.ly/2jod9Vv)
+
+&gt; “BNPP Private Bank did not take reasonable care to ensure that it had effective systems and controls to manage the risks relating to fraud”
+
+* In 2007, FSA fined BNP 350,000 for weaknesses in its systems and controls which allowed a senior employee to steal 1.4 million out of clients' accounts.
+
+---
+
+# Governance
+
+* *BNP Paribas*
+
+&gt; “The weaknesses in question facilitated a series of fraudulent transactions by a senior BNPP Private Bank employee. Between February 2002 and March 2005, by a series of 13 transactions, the employee defrauded BNPP Private Bank of around 1.4 million. The relevant transactions involved the dishonest debiting of clients' accounts without authority. Many of the transactions involved forged clients' instructions and signatures and false requests for changes of correspondence address. Most of the later transactions appear to have been designed to conceal earlier ones, with the total movement of funds in these transactions being 2.6 million. The net loss was of the order of 1.4 million, which was borne by BNPP Private Bank.”
+
+---
+
+# Governance
+
+* *UBS*
+
+* [Final Notice](http://bit.ly/2j0lY4n)
+
+&gt; “In 2012 the FSA fined UBS 29.7 million for "system and control" failings that allowed trader Kweku Adeboli to trade well beyond authorised limits.”
+
+&gt; “On 20 November 2012, the trader was convicted of two counts of fraud by abuse of position and acquitted of four counts of false accounting. He was sentenced to 7 years' imprisonment.”
+
+&gt; “UBS had failed to take reasonable care to organise and control its affairs responsibly and effectively, with adequate risk management systems and that it failed to conduct its business from the London branch will due skill, care and diligence.”
+
+---
+
+# Director insider dealing
+
+* *Jonathan Malins*
+
+* [Final Notice](http://bit.ly/2jBasgi)
+
+
+&gt; “Cambrian Mining was formed in 2002. It obtained a listing for its ordinary shares on AIM in 2003. ...Jonathan Malins was a founding co-member of Cambrian and is the only executive director based in the UK. He was the Finance Director at the material time, a position Mr Malins still holds. In addition Mr Malins is also a director of a number of other AIM companies.”
+
+
+&gt; “Mr Jonathan Malins ...had committed market abuse by buying shares in Cambrian during a closed period, based on his inside knowledge of the company's financial condition and business performance, on 23 March 2005 and 31 March 2005.”
+
+---
+
+# Director insider dealing
+
+* *Jonathan Malins*
+
+
+&gt; “He did not seek permission to buy the shares, as is required during a closed period, and knew that the placing had not been announced when he made his purchase.”
+
+
+&gt; “On 21 December 2005, the Financial Services Authority fined Jonathan Malins 25,000 for committing market abuse by misusing relevant information to buy shares in Cambrian Mining.”
+
+---
+
+name: summary
+
+class: inverse, center, middle
+
+# Summary
+
+---
+
+# Summary
+
+* You should learn information security requirements of
+
+    + UK Data Protection Bill and Council of Europe GDPA
+    
+    + FCA Handbook
+    
+    + UK Industries
+    
+    + International organisations
+    
+    + FATA reports
+    </textarea>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
